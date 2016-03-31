@@ -1,1 +1,142 @@
-helloooo
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav" id="main-menu">
+                <li><a href="#top">Home</a>
+                </li>
+                <li><a href="#page-about">About</a>
+                </li>
+                <li><a href="#page-contact">Contact Us</a>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <section>
+        <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#screenshot-carousel" data-slide-to="1"></li>
+            <li data-target="#screenshot-carousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+        <div class="item active">
+          <%= image_tag ("new-main.jpg")%>
+          <div class="carousel-caption">
+            <h1 id = "bglogistics">BH Logisics</h1>
+            <p>For All Your Trucking Needs</p>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag ("happy-driver.jpg")%>
+          <div class="carousel-caption">
+            <h3>Ranked Amongst the Most Reliable Carriers.</h3>
+            <h3>Decades of Expirence </h3>
+            <h3> Dedicated Routes
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag ("hand-shaking.jpg")%>
+          <div class="carousel-caption">
+            <h3>Join our team today and unlock your potential!</h3>
+          </div>
+        </div>
+      </div><!-- End Carousel inner -->
+  <a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div><!-- End Carousel -->
+
+
+ <section id="page-about" class="page-about container-fluid">
+    <div class="container">
+        <header class="section-header">
+            <h2 class="section-title text-center">About B.H. logistics</h2>
+        </header>
+    </div>
+    <div class="container about-me">
+        <div class="container col-md-3 profile-pic">
+            <img src="imgs/profile.png" class="center-block img-circle" height="200px;">
+        </div>
+        <div class="container col-md-9 profile-desc">
+            <p class="profile-para">A</p>
+            <br>
+                <p class="profile-para">On a more </p>
+            </br>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+
+  <div class="container">
+    <section>
+      <div class="page-header" id="contact">
+          <h2>Contact Us</h2>
+        </div><!-- End Page Header -->
+
+        <div class="row">
+          <div class="col-lg-4">
+            <p>Send us a message, or contact us from the address below</p>
+
+
+
+            <address>
+              <h3>25882 Orchard Lake Rd</h3>
+              <h3>Farmington Hills, MI 48336</h3>
+              <h4>248-565-3221</h4>
+              <h4>bhlogistics@gmail.com</h4>
+            </address>
+          </div>
+
+          <div class="col-lg-8">
+            <form action="" class="form-horizontal">
+              <div class="form-group">
+                <label for="user-name" class="col-lg-2 control-label">Name</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-name" placeholder="Enter you name">
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <label for="user-email" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-email" placeholder="Enter you Email Address">
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <label for="user-message" class="col-lg-2 control-label">Additional Information</label>
+                <div class="col-lg-10">
+                  <textarea name="user-message" id="user-message" class="form-control"
+                  cols="20" rows="10" placeholder="Enter your Message"></textarea>
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+
+
+
+            </form>
+          </div>
+        </div><!-- End the row -->
+
+    </section>
+  </div>
