@@ -6,9 +6,15 @@
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body id= "top">
 
 <%= yield %>
+
+<script>
+  $('.carousel').carousel({
+   interval: 1000000
+  });
+ </script>
 
 </body>
 </html>
