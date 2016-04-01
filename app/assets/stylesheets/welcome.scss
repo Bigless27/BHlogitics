@@ -14,3 +14,77 @@
   text-align: center;
 }
 
+
+/*Fade in */
+@-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+
+
+h1{
+  font-family: helvetica;
+  margin-bottom: 10px;
+}
+
+p{
+  font-family: helvetica;
+  margin-bottom: 110px;
+}
+
+@media all and (max-width: 1400px) { /* screen size until 1200px */
+  .carousel-caption{
+    margin-bottom: 280px;
+  }
+
+  h1{
+    font-size: 6.5em;
+  }
+  p{
+    font-size: 3.0em;
+  }
+}
+
+
+@media all and (max-width: 1000px) { /* screen size until 1000px */
+    .carousel-caption{
+    margin-bottom: 150px;
+  }
+    h1{
+    font-size: 5.0em;
+  }
+    p{
+    font-size:2.0em;
+  }
+
+}
+
+@media all and (max-width: 650px) { /* screen size until 500px */
+    .carousel-caption{
+    margin-bottom: 100px;
+  }
+    h1{
+    font-size: 3.8em;
+  }
+    p{
+    font-size:1.0em;
+  }
+}
+
+
+
