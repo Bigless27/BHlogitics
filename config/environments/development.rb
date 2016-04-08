@@ -14,10 +14,25 @@ Rails.application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
+
+  #Send Mail
+  config.action_mailer.delivery_method =:smtp
+
+  # SMTP settings for mailgun
+ActionMailer::Base.smtp_settings = {
+  :port           => 587,
+  :address        => "smtp.mailgun.org",
+  :domain         => ENV['domain'],
+  :user_name      => ENV['username'],
+  :password       => ENV['password'],
+  :authentication => :plain
+}
+
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
+
 
   # Raise an error on page load if there are pending migrations.
   config.active_record.migration_error = :page_load
