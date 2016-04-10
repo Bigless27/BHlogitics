@@ -7,13 +7,15 @@
 
 #map-container{
   padding: 0px 0px;
-    background-color: #F8F8F8;
-  h2{
-    font-size: 50px;
+    background-color: #fff;
+  h1{
     font-family: helvetica;
     text-align: center;
     color:black;
-    border-bottom: 2px solid #23ABE2
+  }
+  p{
+    font-size: 18px;
+    padding: 0px 12px;
   }
 }
 
