@@ -1,19 +1,28 @@
-.about{
-    text-align:justify;
-    width:30em;
-    list-style: none;
-    color: #23ABE2;
-    font-size: 22px;
-    padding-top: 70px;
+
+#about{
+    background-color: #fff;
+    color: black;
+    font-family: helvetica;
+    font-size: 30px;
     padding-left: 100px;
-    margin:auto;
-
-    li{
-      padding-top: 10px
-    }
-
+    height: 400px;
 }
 
+.about-text{
+    text-align: center;
+    width: 200px;
+    font-family: helvetica;
+    font-size: 14px;
+}
+
+.half-rule{
+    width: 100px;
+    margin: 40px auto;
+}
+hr{
+    border: 0;
+    border-top: 2px solid #23ABE2
+}
 
 .parallax-window {
     min-height: 400px;

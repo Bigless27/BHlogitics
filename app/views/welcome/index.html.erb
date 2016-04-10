@@ -53,15 +53,17 @@
 </div>
 
 
-<!-- Map -->
+<!-- About -->
 <div id= "map-container" class = "container-fluid">
-  <h2 class = "module">Our Headquarters<h2>
- <div id="map" class = "container"></div>
+  <h1 class = "module">About BH Logistics<h1>
+    <hr class = "half-rule">
+    <p>  Hello this is where i'm going to put the text for the about me section for the BH webstie!!</p>
 </div>
 
 
-<!-- About -->
-<div id = "about" class="parallax-window" data-parallax="scroll" data-image-src= "<%=asset_path('evening-truck-2.png')%>" data-ios-fix = "true" data-android-fix = "true" >
+
+<!-- Parallax Image -->
+<div  class="parallax-window" data-parallax="scroll" data-image-src= "<%=asset_path('evening-truck-2.png')%>" data-ios-fix = "true" data-android-fix = "true" >
   <ul id = "points">
     <li>Decades of Experience</li>
     <li>Dedicated routes</li>
@@ -71,10 +73,24 @@
   </ul>
 </div>
 
+<!-- Map -->
+<div id= "map-container" class = "container-fluid">
+  <h1 class = "module">Our Headquarters<h1>
+    <hr class = "half-rule">
+ <div id="map" class = "container"></div>
+</div>
+
+
 <!-- Contact -->
 
 <div id = "contact" class = "container-fluid">
   <%= render '/contacts/new' %>
+</div>
 
 
+<!-- Footer -->
+<div id="footer">
+    <div class="container">
+      <p class="text-muted credit"><span style = "color:#23ABE2;">BH</span>Logistics &#0153</p>
+    </div>
 </div>

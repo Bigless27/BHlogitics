@@ -19,6 +19,7 @@ gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootstrap-validator-rails'
 gem 'mail_form'
+gem 'bootstrap_form'
 gem 'simple_form'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

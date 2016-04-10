@@ -1,6 +1,10 @@
 class Contact < MailForm::Base
-  attribute :name,      :validate => true
-  attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
+  attribute :first_name
+  attribute :last_name
+  attribute :email
+  attribute :phone
+  attribute :city
+  attribute :state
   attribute :message
   attribute :nickname,  :captcha  => true
 
@@ -10,7 +14,7 @@ class Contact < MailForm::Base
     {
       :subject => "My Contact Form",
       :to => "bhlogisticsllc@gmail.com",
-      :from => %("#{name}" <#{email}>)
+      :from => %("#{first_name}", #{last_name} <#{email}>)
     }
   end
 end
