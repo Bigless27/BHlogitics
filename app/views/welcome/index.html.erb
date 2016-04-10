@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav id = "home" class="navbar navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -16,14 +16,16 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+
 
 
 
@@ -49,7 +51,7 @@
 
 
 <!-- About -->
-<div class="parallax-window" data-parallax="scroll" data-image-src= "<%=asset_path('evening-truck-2.png')%>" data-ios-fix = "true" data-android-fix = "true" >
+<div id = "about" class="parallax-window" data-parallax="scroll" data-image-src= "<%=asset_path('evening-truck-2.png')%>" data-ios-fix = "true" data-android-fix = "true" >
   <ul id = "points">
     <li>Decades of Experience</li>
     <li>Dedicated routes</li>
@@ -61,7 +63,7 @@
 
 <!-- Contact -->
 
-<div class = "container-fluid">
+<div id = "contact" class = "container-fluid">
   <h1> Contact Us Today!</h1>
 
 
