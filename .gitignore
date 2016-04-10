@@ -9,6 +9,8 @@
 
 #ignore
 /config/application.yml
+.env
+Procfile
 
 # Ignore all logfiles and tempfiles.
 /log/*

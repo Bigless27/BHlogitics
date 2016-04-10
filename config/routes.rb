@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
-  resources :messages, only: [:new, :create]
 
-  get 'contact_form/new'
 
-  get 'contact_form/create'
-
-  resources :contact_form
+  match '/contacts', to:'contacts#new', via: 'get'
+  resources "contacts", only: [:new, :create]
   root :to => "welcome#index"
 end
