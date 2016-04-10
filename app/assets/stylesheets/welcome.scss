@@ -61,6 +61,11 @@ p{
   p{
     font-size: 1.6em;
   }
+
+  #points{
+    font-size: 40px;
+    padding-top: 30px;
+  }
 }
 
 
@@ -72,6 +77,11 @@ p{
     font-size:1.3em;
   }
 
+    #points{
+    font-size: 40px;
+    padding-top: 30px;
+  }
+
 }
 
 @media all and (max-width: 650px) { /* screen size until 500px */
@@ -81,6 +91,18 @@ p{
     p{
     font-size:0.8em;
     margin-bottom: 30px;
+  }
+
+  #points{
+    font-size: 26px;
+    padding-top: 80px;
+  }
+}
+
+@media all and (max-width: 450px){
+  #points{
+    font-size: 20px;
+    padding-top: 80px;
   }
 }
 
