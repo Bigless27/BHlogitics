@@ -1,54 +1,58 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
-$( window ).resize(function() {
-$window = $(window);
-if( $window .width() > 800){
-
- $('section[data-type="background"]').each(function(){
- var $bgobj = $(this); // assigning the object
-
-  $(window).scroll(function() {
-
-    // Scroll the background at var speed
-    // the yPos is a negative value because we're scrolling it UP!
-    var yPos = -( ($window.scrollTop() - $bgobj.offset().top) / $bgobj.data('speed'));
-
-    // Put together our final background position
-    var coords = '50% '+ yPos + 'px';
-
-    // Move the background
-    $bgobj.css({ backgroundPosition: coords });
-
- }); // window scroll Ends
-
- });
-}
-});
-
-
-
 $(document).ready(function(){
-$window = $(window);
-if( $window.width() > 800){
-// Cache the Window object
 
- $('section[data-type="background"]').each(function(){
- var $bgobj = $(this); // assigning the object
+(function($) {
 
-  $(window).scroll(function() {
+  /**
+   * Copyright 2012, Digital Fusion
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Sam Sehnert
+   * @desc A small plugin that checks whether elements are within
+   *     the user visible viewport of a web browser.
+   *     only accounts for vertical position, not horizontal.
+   */
 
-    // Scroll the background at var speed
-    // the yPos is a negative value because we're scrolling it UP!
-    var yPos = -( ($window.scrollTop() - $bgobj.offset().top) / $bgobj.data('speed'));
+  $.fn.visible = function(partial) {
 
-    // Put together our final background position
-    var coords = '50% '+ yPos + 'px';
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
 
-    // Move the background
-    $bgobj.css({ backgroundPosition: coords });
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
 
- }); // window scroll Ends
+  };
 
- });
-}
+})(jQuery);
+
+var win = $(window);
+var allMods = $(".module");
+
+// Already visible modules
+allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible");
+  }
 });
+
+win.scroll(function(event) {
+
+  allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in");
+    }
+  });
+
+});
+
+
+})
+
+

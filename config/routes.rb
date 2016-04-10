@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
-  resources :users
+
+
+  match '/contacts', to:'contacts#new', via: 'get'
+  resources "contacts", only: [:new, :create]
   root :to => "welcome#index"
 end

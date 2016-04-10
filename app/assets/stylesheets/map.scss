@@ -1,17 +1,31 @@
 #map {
   padding: 0px 20px;
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 280px;
   margin: auto;
 }
 
 #map-container{
-  background-color: #fff;
-  padding: 5px 0px;
+  padding: 0px 0px;
+    background-color: #F8F8F8;
   h2{
     font-size: 50px;
     font-family: helvetica;
     text-align: center;
     color:black;
+    border-bottom: 2px solid #23ABE2
   }
+}
+
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.9s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
 }

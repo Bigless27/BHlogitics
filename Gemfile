@@ -20,7 +20,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootstrap-validator-rails'
 gem 'mail_form'
 gem 'simple_form'
-gem 'mailgun-ruby', '~>1.0.2', require: 'mailgun'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -39,6 +39,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry'
   gem 'rspec-rails'
+  gem 'foreman'
   gem 'byebug'
 end
 
