@@ -32,3 +32,10 @@
 @keyframes come-in {
   to { transform: translateY(0); }
 }
+
+@media all and (min-width: 700px){
+  #map{
+    height:400px;
+    width:400px;
+  }
+}
