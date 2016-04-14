@@ -14,9 +14,27 @@
     color:black;
   }
   p{
-    /*This is referring tto the about me container*/
+    /*This is referring to the about me container*/
     font-size: 18px;
     padding: 0px 12px;
+  }
+
+  ul{
+    font-size: 16px;
+    text-align: justify;
+    width: 310px;
+    margin: auto;
+
+    li{
+      padding-top: 10px
+    }
+  }
+
+  .bottom-about{
+    font-size: 22px;
+    padding: 0px 12px;
+    padding-top: 25px;
+    text-align: center;
   }
 }
 
